@@ -2,6 +2,7 @@ import React from 'react';
 import GlobalStyle from './utils/style/GlobalStyle';
 import MainAppBar from './components/MainAppBar';
 import { BrowserRouter } from 'react-router-dom';
+import AppLayout from './components/AppLayout';
 import Router from './Route/Router';
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
       <BrowserRouter>
         <GlobalStyle />
         <MainAppBar />
-        <Router />
+        <AppLayout>
+          <Router />
+        </AppLayout>
       </BrowserRouter>
     </div>
   );

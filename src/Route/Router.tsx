@@ -1,5 +1,5 @@
 import { Switch, Route } from 'react-router-dom';
-
+import Home from '../pages/Home';
 import {
   INDEX,
   MOVIE_DETAIL,
@@ -11,7 +11,7 @@ import {
 const Router = () => (
   <Switch>
     <Route exact path={INDEX}>
-      index
+      <Home />
     </Route>
     <Route exact path={MOVIE_DETAIL}>
       movie detail
